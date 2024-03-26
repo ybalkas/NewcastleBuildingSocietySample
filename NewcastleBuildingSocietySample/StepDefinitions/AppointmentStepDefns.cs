@@ -68,7 +68,7 @@ namespace NewcastleBuildingSocietySample.StepDefinitions
         [Then(@"I should be able to create an appointment")]
         public void ThenIShouldBeAbleToCreateAnAppointment()
         {
-            Assert.AreEqual("Thank you for appointment request.", driver.FindElement(By.XPath("//*[text()='Thank you for appointment request.]")));
+            Assert.AreEqual("Thank you for appointment request.", driver.FindElement(By.XPath("//*[text()='Thank you for appointment request.']")).Text);
             driver.Quit();
         }
 
